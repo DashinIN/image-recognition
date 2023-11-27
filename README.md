@@ -11,6 +11,3 @@
 
 Запросы с клиента отправляются с помощью RTK Query, приложение написано на React + Redux toolkit
 
-
-[Обучение модели в  Google Colaboratory](https://colab.research.google.com/drive/16Vr1D6XLpuvbR7cScZbRqrqdsk3WvAtl?usp=sharing)
-
