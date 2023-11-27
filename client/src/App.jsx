@@ -1,4 +1,4 @@
-import  { useState, useEffect } from 'react';
+import  { useState } from 'react';
 import './index.scss'
 import { useImageLoadMutation } from './store/imageLoad'
 import ImageInput from './features/ImageInput/ImageInput';
@@ -8,13 +8,8 @@ const App = () => {
   const [selectedFile, setSelectedFile] = useState(null);
   const [result, setResult] = useState(null);
 
-  useEffect(() => {
-    document.title = 'Digit Recognition'; 
-  }, []);
-
   const [loadImage, { isLoading, error }] = useImageLoadMutation();
   
-
   const handleUpload = async () => {
     try {
       setResult(null);

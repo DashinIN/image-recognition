@@ -1,8 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
-// const baseQuery = fetchBaseQuery({ baseUrl: 'https://digit-recognition-api.onrender.com' });
-
-const baseQuery = fetchBaseQuery({ baseUrl: 'http://localhost:5000' });
+const baseQuery = fetchBaseQuery({ baseUrl: 'https://image-recognition-api-i2u4.onrender.com' });
 
 export const imageLoadApi = createApi({
   baseQuery,
