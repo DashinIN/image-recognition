@@ -35,9 +35,8 @@ async function preprocessImage(imageBuffer) {
   }
 }
 
-const modelPath = 'file://C:/Users/igree/Desktop/digit-recognition/server/model/model.json';
-// app.use('/model', express.static(path.join(__dirname, 'model')));
-// const modelPath = 'https://digit-recognition-api.onrender.com/model/model.json'
+app.use('/model', express.static(path.join(__dirname, 'model')));
+const modelPath = 'https://image-recognition-api-i2u4.onrender.com/model/model.json'
 
 app.post('/classify', upload.single('image'), async (req, res) => {
   try {
